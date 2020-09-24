@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
 </head>
 <body>
-    <!-- iframe to embed the video -->
-    <!-- the video id must be changed to a real video id in order to show the video -->
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/videoID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- navigation bar -->
+    <div id="navigation-bar">
+        <!-- logo -->
+        <div id="logo-icon">
+            <img src="logo.png" alt="youtube logo">
+        </div>
+        <!-- search box -->
+        <div id="search-box">
+            <div id="search-input">
+                <input type="search">
+            </div>
+            <div id="search-icon">
+                <img src="search-icon.svg" alt="search icon">
+            </div>
+        </div>
+        <!-- right navigation corner -->
+        <div id="right-nav-corner"></div>
+    </div>
+    <div id="columns">
+        <div id="primary">
+                <!-- video paler -->
+                <div id="video-player">
+                    <iframe id="vid-frame" src="https://www.youtube.com/embed/7yLxxyzGiko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- video title  -->
+                <div id="video-title">
+                    <p id="title">Kittens walk with a tiny chicken</p>
+                </div>
+                <div id="comments"></div>
+        </div>
+        <!-- right side -->
+        <div id="Secondary">
+                <div id="paly-list"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
 
